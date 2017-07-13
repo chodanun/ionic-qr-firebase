@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+  <div> 
+    <div text-center *ngIf="mKey"> 
+      <qr-code [value]=mKey [size]="150"></qr-code>
+      <p>mKey: {{mKey}}</p>
+    </div>
+
+    <button ion-button full color="secondary" (click) = "saveToFirebase()" >Get mKey from Firebase</button>
+    
+  </div>
+  
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <h2>QUEUE INFORMATION</h2>
+    <div *ngIf="qObj">
+      <p>ticket: {{qObj.ticket}}</p> 
+      <p>queueName: {{qObj.queueName}}</p>
+      <p>waitingQueue: {{waitingQueueNumber}}</p>
+    </div>
+  </div>
+  
+  
+</ion-content>
